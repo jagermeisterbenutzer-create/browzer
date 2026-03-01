@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Browser</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="brand">
+          <span class="brand__dot brand__dot--sky"></span>
+          <span class="brand__dot brand__dot--sun"></span>
+          <span class="brand__dot brand__dot--leaf"></span>
+          <span class="brand__dot brand__dot--ink"></span>
+          <h1 class="brand__title">Browzer</h1>
+        </div>
+        <p class="hero__subtitle">Мини браузер с поиском Google. Введите запрос и нажмите Enter.</p>
+        <form class="search" id="searchForm" action="https://www.google.com/search" method="GET" target="_blank">
+          <label class="search__label" for="q">Поиск в Google</label>
+          <div class="search__field">
+            <input
+              type="text"
+              id="q"
+              name="q"
+              placeholder="Что ищем сегодня?"
+              autocomplete="off"
+              required
+            />
+            <button type="submit" class="search__button">Искать</button>
+          </div>
+        </form>
+        <div class="quick">
+          <span class="quick__label">Быстрые ссылки:</span>
+          <div class="quick__list">
+            <a href="https://www.google.com" target="_blank" rel="noopener">Google</a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a>
+            <a href="https://www.github.com" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="panel__item">
+          <h2>Адресная строка</h2>
+          <p>Этот экран имитирует простой браузер. Для поиска используется Google.</p>
+        </div>
+        <div class="panel__item">
+          <h2>Подсказка</h2>
+          <p>Введите запрос, нажмите Enter и откроется вкладка с результатами.</p>
+        </div>
+        <div class="panel__item">
+          <h2>Быстро и просто</h2>
+          <p>Никаких аккаунтов, только поиск и быстрые ссылки.</p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
